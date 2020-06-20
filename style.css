@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(#333,rgba(100,100,100,0.7));
+    border: 2px solid	rgba(255,255,255,0.9);
+    border-radius:7px;
+  
+    }
+  
+  ul.topnav li {
+      float: left;
+      border-right:2px solid rgba(255,255,255,0.9);
+      }
+  ul.topnav li:last-child {
+    border-right: none;
+  }
+  ul.topnav li a {
+        display: block;
+      font-family: "lato", sans-serif;
+         font-size:19px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+        text-decoration: none;
+  }
+  
+  ul.topnav li a:hover{
+      color:rgba(0,0,0,0.5);
+      background-color: rgba(255,255,255,0.9)
+  }
+  ul.topnav li.right {float: right;}
+  
+  
+  body
+  {
+      background-color: #2f2f2f;
+      background-size: cover; /* Resize the background image to cover the entire container */
+         font-family: "lato", sans-serif;
+         font-size:19px;
+          color: white;
+  }
+  .x{
+      margin: 100px;
+      margin-top: 70px;
+  }
+  table th{
+      font-family: "lato", sans-serif;
+         font-size:19px;
+      color: white;
+  }
+  table td{
+      font-family: "lato", sans-serif;
+         font-size:19px;
+      color: white;
+  }
+  table tr{
+      font-family: "lato", sans-serif;
+         font-size:19px;
+      color: white;
+  }
+  table tr td .pic{
+      float:top-right;
+  }
+  a
+  {
+      text-decoration: none;
+      font-family: "lato", sans-serif;
+         font-size:19px;
+          color: white;
+  }
+  a:hover
+  {
+      color:rgba(225,225,225,0.5);
+  }
+  #about img.pic {
+      border: 3px solid #ddd;
+       border-radius: 5px;
+      padding: 5px;
+      width: 225px;
+      height:250px;
+      float:right;
+      margin-left:10px;
+      margin-bottom:10px;
+  }
+  
+  #about img.pic:hover {
+        box-shadow: 0 0 4px 4px rgba(140, 140, 140, 0.5);
+  }
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:4px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-instagram {
+    color: white;
+  }
+  .fa-linkedin {
+    color: white;
+  }
+  
+  
+  div .abt_me{
+      word-wrap: break-word;
+  }
+  div .cont{
+      float:right;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  #news img{
+  }
+  
+  @media screen and (max-width: 1100px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none; border-right:none;border-bottom:2px solid rgba(255,255,255,0.9); }
+    ul.topnav li:last-child {
+    border-bottom: none;}
+    div.x{margin: 5px;}
+    div .cont{float:none;}
+    }
+  @media screen and (max-width: 1100px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+    #about img.pic {
+    float:center;
+    width:100%;
+    height:Auto;
+    border:none;
+    box-shadow: 0 0 4px 4px rgba(140, 140, 140, 0.5);
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1000px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+ 
+hr{
+    width: 100%; 
+    color: rgb(255, 255, 255); 
+    height: 1px; 
+    background-color:rgb(255, 255, 255);
+}
+.col-md-3{
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    content: justify;
+}

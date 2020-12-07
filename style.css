@@ -40,7 +40,6 @@
   body
   {
       background-color: #2f2f2f;
-      background-size: cover; /* Resize the background image to cover the entire container */
          font-family: "lato", sans-serif;
          font-size:19px;
           color: white;
@@ -58,8 +57,10 @@
       font-family: "lato", sans-serif;
          font-size:19px;
       color: white;
+      padding: 10px;
   }
   table tr{
+      
       font-family: "lato", sans-serif;
          font-size:19px;
       color: white;
@@ -88,10 +89,27 @@
       margin-left:10px;
       margin-bottom:10px;
   }
+
+  
   
   #about img.pic:hover {
         box-shadow: 0 0 4px 4px rgba(140, 140, 140, 0.5);
   }
+
+  @media only screen and (max-width: 600px) {
+    #about img.pic {
+      border: 3px solid #ddd;
+       border-radius: 5px;
+      padding: 5px;
+      width: 200px;
+      height:230px;
+      float:right;
+      margin-left:10px;
+      margin-bottom:10px;
+  }
+  
+  }
+
   .fa {
     padding: 10px;
     font-size: 20px;
@@ -147,10 +165,10 @@
   
   @media screen and (max-width: 1100px) {
     ul.topnav li.right, 
-    ul.topnav li {float: none; border-right:none;border-bottom:2px solid rgba(255,255,255,0.9); }
+    ul.topnav li {float: none; border-right:none;border-bottom:2px solid rgba(255,255,255,0.9);}
     ul.topnav li:last-child {
     border-bottom: none;}
-    div.x{margin: 5px;}
+    div.x{margin: 5px 6px;}
     div .cont{float:none;}
     }
   @media screen and (max-width: 1100px) {
@@ -159,13 +177,7 @@
       flex: 50%;
       max-width: 50%;
     }
-    #about img.pic {
-    float:center;
-    width:100%;
-    height:Auto;
-    border:none;
-    box-shadow: 0 0 4px 4px rgba(140, 140, 140, 0.5);
-    }
+
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */

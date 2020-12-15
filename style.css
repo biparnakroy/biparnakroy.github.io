@@ -160,9 +160,7 @@
     vertical-align: middle;
     width: 100%;
   }
-  #news img{
-  }
-  
+
   @media screen and (max-width: 1100px) {
     ul.topnav li.right, 
     ul.topnav li {float: none; border-right:none;border-bottom:2px solid rgba(255,255,255,0.9);}
